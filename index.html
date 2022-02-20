@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Transfer.css">
+</head>
+<body>
+    <a href="https://lghung.github.io/thehomepage/"><img class="imgs" src="https://www.apmedia.vn/wp-content/uploads/2018/02/Home-Icon.png"></a>
+    <div class="login_container">
+        <div class="top_container">
+            Giao dịch
+            <hr>
+        </div>
+        <div class="bottom_container">
+            <div class="left_70">
+                <div class="left_top">
+                    <div class="after_padding">
+                        <p class="mail_text"> Người gửi<p>
+                        <input class="za_input" type="number" id="Rollbox2" placeholder="Id người gửi">    
+                    </div>    
+                    <div class="after_padding">
+                        <p class="mail_text"> Người nhận</p>
+                        <input class="za_input" type="number" id="Rollbox" placeholder="Id người nhận">    
+                    </div>                   
+                </div>
+                <div class="left_bottom">
+                    <div class="after_padding">
+                        <p class="pass_text"> Số tiền</p>
+                        <input class="za_input" id="cash" type="number" placeholder="Số tiền muốn gửi">  
+                    </div>
+                </div>
+            </div>
+            <div class="right_30">
+                <div class="right_content">
+                    <button class="none_fix" id="transferall">
+                        Giao dịch
+                    </button>
+                    <button id="cancel" class="none_fix">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+  
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA3oPTL7N2fv3ucPLCzkFZj9QRfWryeWnk",
+      authDomain: "test2-7f3ee.firebaseapp.com",
+      projectId: "test2-7f3ee",
+      storageBucket: "test2-7f3ee.appspot.com",
+      messagingSenderId: "968101558034",
+      appId: "1:968101558034:web:b18f070e4461a02337a5cb",
+      databaseURL:
+      "https://test2-7f3ee-default-rtdb.asia-southeast1.firebasedatabase.app/",
+        };
+  
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      <script type="module" src="./transfer.js"></script>
+</body>
+</html>
